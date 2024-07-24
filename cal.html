@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>CALCULATOR</title>
+    <style>
+        input{
+            color: green;
+        }
+        form{
+            border: 2px solid darkblue;
+            border-radius: 2px
+        }
+    </style>
+ </head>
+ <body>
+    <form name="f1" align="center">
+        <input id="cal" type="text" name="ans"><br>
+        <input type="button" value="1" onclick="f1.ans.value+='1'">
+        <input type="button" value="2" onclick="f1.ans.value+='2'">
+        <input type="button" value="3" onclick="f1.ans.value+='3'">
+        <input type="button" value="+" onclick="f1.ans.value+='+'"><br>
+        <input type="button" value="4" onclick="f1.ans.value+='4'">
+        <input type="button" value="5" onclick="f1.ans.value+='5'">
+        <input type="button" value="6" onclick="f1.ans.value+='6'">
+        <input type="button" value="-" onclick="f1.ans.value+='-'"><br>
+        <input type="button" value="7" onclick="f1.ans.value+='7'">
+        <input type="button" value="8" onclick="f1.ans.value+='8'">
+        <input type="button" value="9" onclick="f1.ans.value+='9'">
+        <input type="button" value="*" onclick="f1.ans.value+='*'"><br>
+        <input type="button" value="/" onclick="f1.ans.value+='/'">
+        <input type="button" value="%" onclick="f1.ans.value+='%'">
+        <input type="button" value="." onclick="f1.ans.value+='.'">
+        <input type="button" value="=" onclick="f1.ans.value = eval(f1.ans.value) ">
+        <br><br>
+        <input type="button" value="Clear All" onclick="f1.ans.value = '' " id="cal" >
+        <br>
+    </form>
+    
+ </body>
+ </html>
