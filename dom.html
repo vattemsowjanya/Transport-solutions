@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function cnode(){
+            var newheading=document.createElement("h1");
+            newheading.innerHTML="this is h1 tagggg";
+            newheading.style.color="green";
+            var n=document.getElementById("x");
+            n.appendChild(newheading);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p id="x">This is a paragraph</p>
+        <button onclick="cnode();">create a h1 tag</button>
+    </div>
+    
+</body>
+</html>

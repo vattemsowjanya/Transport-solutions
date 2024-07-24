@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function insertb(){
+            const newNode=document.createElement("li");
+            const textNode=document.createTextNode("juice");
+            newNode.append(textNode);
+            const list=document.getElementById("mylist");
+            list.insertBefore(newNode,list.children[0]);
+                }
+        function removeb(){
+            const list=document.getElementById("mylist");
+            list.removeChild(list.children[1]);
+        }
+        function replaceb(){
+            const newNode=document.createElement("li");
+            const textNode=document.createTextNode("idli");
+            newNode.append(textNode);
+            const list=document.getElementById("mylist");
+            list.replaceChild(newNode,list.children[1]);
+        }
+    </script>
+    
+</head>
+<body>
+    <h1>the element object</h1>
+    <h2>insertbefore(),removechild(),replacechild() methods</h2>
+    <ul id="mylist">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>water</li>
+    </ul>
+    <button onclick="insertb();">insert</button>
+    <button onclick="removeb();">remove</button>
+    <button onclick="replaceb();">replace</button>
+    
+</body>
+</html>
